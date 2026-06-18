@@ -21,11 +21,20 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Live Demo
+## Deploy to GitHub Pages
 
-After deployment, the app is hosted at:
+1. Log in to GitHub CLI (one-time):
+   ```bash
+   gh auth login
+   ```
+2. Run the publish script from the project folder:
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File .\publish-github.ps1
+   ```
 
-**https://\<your-github-username\>.github.io/weather-app/**
+The GitHub Actions workflow deploys automatically on every push to `main`.
+
+Live URL: **https://\<your-github-username\>.github.io/weather-app/**
 
 ## Build for Production
 
